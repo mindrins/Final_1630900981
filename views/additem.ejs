@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รางวัลสลากกินแบ่งรัฐบาล</title>
+    
+</head>
+<body>
+    <% if(typeof mesg != "undefined") { %>   
+        <h1><%= mesg %></h1>    
+        <% } %>
+
+    <form action="/additem" method="post">
+        <h2> กรอกข้อมูลเป็นรอบ</h2>
+        <div>
+            <label>เลขรางวัล</label>
+            <input type="text" name="number" id="number">
+        </div>
+        <div>
+            <label>รอบวันที่</label>
+            <input type="text" name="day" id="day">
+        </div>
+        <div>
+            <label>เดือน</label>
+            <input type="text" name="month" id="month">
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+        <br>
+        <hr>
+        <h2>กรอกข้อมูลเป็นรางวัล</h2>
+        <div>
+            <label>เลขรางวัล</label>
+            <input type="text" name="number" id="number">
+        </div>
+        <div>
+            <label>รางวัล</label>
+            <input type="text" name="prize" id="prize">
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <hr>
+    
+<br>
+    <u><h5>Credit 	&copy; </h5></u>
+    <h6>Rinradee Phollamud</h6>
+    <h6>Student ID:1630900981</h6>
+    
+</body>
+</html>
